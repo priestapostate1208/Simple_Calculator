@@ -19,7 +19,7 @@ active = True
 calculation = {"+": add, "-":subtract, "/": divide, "*":multiply}
 
 print (logo)
-while active == True:
+while active:
     first_number = input("What is the first number? ")
     operation = input("What is the operation? " )
     second_number = input("What is the second number? ")
