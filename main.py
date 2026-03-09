@@ -31,17 +31,11 @@ def calculator():
         second_number = input("What is the second number? ")
         result = calculation[operation](int(first_number), int(second_number))
         print(f"The result for {first_number} {operation} {second_number} is {result}.")
-        continue_to_calculate = input ("Do you wish to continue calculating with the previous result? Type 'yes' if so - or 'no' if you wish to start anew.")
-        while continue_to_calculate == "yes":
-            """this is code"""
-            first_number = result
-            operation = input("What is the operation? ")
-            second_number = input("What is the second number? ")
-            result = calculation[operation](int(first_number), int(second_number))
-            print(f"The result for {first_number} {operation} {second_number} is {result}.")
-            continue_to_calculate = input(
-                "Do you wish to continue calculating with the previous result? Type 'yes' if so - or 'no' if you wish to start anew.")
+        continue_to_calculate = input ("Do you wish to continue calculating with the previous result? Type 'yes' if so - or 'no' if you wish to start anew. ")
 
+        if continue_to_calculate == "yes":
+            """this is code - nothing more need to be entered after in this 'if' statement, as it is part of the 'while' loop.   """
+            first_number = result
 
         else:
             active = False
@@ -49,35 +43,3 @@ def calculator():
             calculator()
 
 calculator()
-
-"""continue_to_calculate == 'no'
-first_number = input("What is the first number? ")
-operation = input("What is the operation? ")
-second_number = input("What is the second number? ")
-result = calculation[operation](int(first_number), int(second_number))
-print(f"The result for {first_number} {operation} {second_number} is {result}.")
-
-continue_to_calculate = input("Do you wish to continue calculating with the previous result? Type 'yes' if so - or 'no' if you wish to start anew.")
-
-
-
-if continue_to_calculate == "yes":
-#this is code
-first_number = result
-operation = input("What is the operation? ")
-second_number = input("What is the second number? ")
-result = calculation[operation](int(first_number), int(second_number))
-print(f"The result for {first_number} {operation} {second_number} is {result}.")
-
-else:
-#continue_to_calculate == 'no'
-first_number = input("What is the first number? ")
-for symbol in operation:
-    print (symbol)
-operation = input("What is the operation? ")
-second_number = input("What is the second number? ")
-result = calculation[operation](float(first_number), float(second_number))
-print(f"The result for {first_number} {operation} {second_number} is {result}.")"""
-
-
-
